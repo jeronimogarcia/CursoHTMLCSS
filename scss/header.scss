@@ -1,0 +1,90 @@
+// Grilla header
+.header__grilla {
+  display: grid;
+  grid-template-areas: "headerLogo headerTitulo headerHipervinculos";
+  grid-template-columns: 25% 50% 25%;
+  width: 100%;
+  height: 120px;
+  //   background-image: linear-gradient(#c8efed, #6fc8e4);
+  background-color: #6fc8e4;
+  // Definicion logo en grilla
+  .header__logo {
+    grid-area: headerLogo;
+    position: relative;
+    // Posicion contenedor del logo
+    .header__logoContainer {
+      position: absolute;
+      width: 250px;
+      height: 110px;
+      left: 0;
+      // Posicion rayo
+      .header__raysvgPosition {
+        position: absolute;
+        top: 8px;
+        width: 75px;
+        left: 187px;
+        z-index: 1;
+      }
+      // Efecto rayo
+      .header__raysvgEffect {
+        animation-name: efectoRayo;
+        animation-iteration-count: 1;
+        animation-duration: 1.5s;
+        animation-delay: 0s;
+      }
+      // Posicion del logo
+      .header__logosvgPosition {
+        position: absolute;
+        width: 250px;
+      }
+    }
+  }
+  // Definicion titulo en grilla+h1
+  .header__titulo {
+    grid-area: headerTitulo;
+    h1 {
+      // Posicion
+      display: flex;
+      justify-content: center;
+      // Font
+      margin-top: 35px;
+      font-size: 40px;
+      font: bold;
+      color: blue;
+      // Animacion
+      animation-duration: 2s;
+      animation-name: nombreEmpresa;
+    }
+  }
+  // Definicion y posicion hipervinculos
+  .header__hipervinculos {
+    grid-area: headerHipervinculos;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+  }
+}
+
+// Efecto rayo
+@keyframes efectoRayo {
+  0% {
+    transform: rotateY(360deg);
+  }
+}
+
+// Efecto titulo
+@keyframes nombreEmpresa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Media query del header
+@media only screen and (max-width: 920px) {
+  .header__titulo {
+    display: none;
+  }
+}

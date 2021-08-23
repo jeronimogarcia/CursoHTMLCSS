@@ -1,0 +1,107 @@
+// pagina contacto
+
+// titulo
+.contacto__container {
+  padding-top: 20px;
+  background-color: #ddecf1;
+  display: flex;
+  flex-direction: column;
+  .contacto__h2 {
+    display: flex;
+    justify-content: center;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 24px;
+      padding: 30px 40px 0px 40px;
+      border-bottom: black solid 2px;
+      max-width: 80%;
+    }
+  }
+  .contacto__informacion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .contacto__bloques {
+      text-align: center;
+      min-width: 250px;
+      .contacto__svg {
+        height: 60px;
+        img {
+          width: 50px;
+        }
+      }
+      .contacto__texto {
+        h3 {
+          padding-bottom: 10px;
+          text-decoration: underline;
+          text-transform: uppercase;
+        }
+        p {
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.titulo__h3 {
+  background-color: #ddecf1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+// clientes
+
+.cliente__container {
+  background-color: #ddecf1;
+  .cliente__subcontainer {
+    background-color: #f8efed;
+    border-top-right-radius: 500px 70px;
+    border-top-left-radius: 500px 70px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 0px auto;
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 30px 0 30px 0;
+      align-items: center;
+      min-width: 900px;
+      img {
+        max-width: 220px;
+        margin: 0 30px 0 30px;
+      }
+    }
+  }
+}
+
+// Media query del navBar
+
+@media only screen and (max-width: 856px) {
+  .cliente__container {
+    .cliente__subcontainer {
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+        min-width: auto;
+        img {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}

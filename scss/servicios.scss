@@ -1,0 +1,21 @@
+// servicios
+
+.servicios__container{
+    background-color:#ddecf1 ;
+    .servicios__subContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px 0;
+        .servicios__titulo{
+            padding-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .servicios__texto{
+            max-width: 500px;
+            padding-bottom: 20px;
+        }
+
+
+    }
+}

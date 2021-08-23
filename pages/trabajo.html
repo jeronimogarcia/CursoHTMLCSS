@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Tarco Electric S.A. Formulario de Trabajo</title>
+</head>
+
+<body>
+  <section>
+    <div class="header__grilla">
+      <div class="header__logo">
+        <a href="../index.html">
+          <div class="header__logoContainer">
+            <img src="../imagenes/rayo.svg" alt="Logo Rayo" class="header__raysvgPosition header__raysvgEffect">
+            <img src="../imagenes/logo.svg" alt="Logo Tarco" class="header__logosvgPosition">
+          </div>
+        </a>
+      </div>
+      <div class="header__titulo">
+        <h1>Tarco Electric S.A.</h1>
+      </div>
+      <div class="header__hipervinculos">
+        <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
+        <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <nav class="nav__container">
+    <ul class="nav__lista">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./servicios.html">Servicios</a>
+        <ul class="nav_sublista">
+          <li><a href="">Armado de andamios</a></li>
+          <li><a href="">Fabricación propia</a></li>
+        </ul>
+      </li>
+      <li><a href="./equipamiento.html">Equipamiento</a> </li>
+      <li><a href="./contacto.html">Contacto</a> </li>
+      <li><a href="./trabajo.Html">Trabaja con nosotros</a> </li>
+    </ul>
+  </nav>
+
+  <section class="dropdownContainer">
+    <div class="dropdown dropdownColor">
+      <button class="btn btn-secondary dropdown-toggle buttonSize" type="button" id="dropdownMenuButton"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="../imagenes/menuBlack.svg" alt="Menu Hamburguesa" class="dropdownImage">
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="../index.html">Inicio</a>
+        <a class="dropdown-item" href="./servicios.html">Servicios</a>
+        <a class="dropdown-item" href="./equipamiento.html">Equipamiento</a>
+        <ul>
+          <li><a href="">Armado de andamios</a></li>
+          <li><a href="">Fabricación propia</a></li>
+        </ul>
+        <a class="dropdown-item" href="./contacto.html">Contacto</a>
+        <a class="dropdown-item" href="./trabajo.Html">Trabaja con nosotros</a>
+      </div>
+    </div>
+    <h2 class="dropdown__menu">Menú</h2>
+  </section>
+
+  <section>
+    <form action="Contacto" method="POST" enctype="application/x-www-form-urlencoded">
+      <div class="form__container">
+        <div class="form__bloque">
+          <div class="form__casilla">
+            <p>Nombre:</p>
+            <input name="name">
+          </div>
+          <div class="form__casilla">
+            <p>Apellido:</p>
+            <input name="apellido">
+          </div>
+        </div>
+        <div class="form__bloque">
+          <div class="form__casilla">
+            <p>Edad:</p>
+            <input name="edad">
+          </div>
+          <div class="form__casilla">
+            <p>Localidad:</p>
+            <input name="localidad">
+          </div>
+        </div>
+        <div class="form__bloque">
+          <div class="form__casilla">
+            <span>Sexo:</span>
+            <span>Hombre</span>
+            <input type="radio" name="sexo" value="hombre">
+            <span>Mujer</span>
+            <input type="radio" name="sexo" value="mujer">
+          </div>
+          <div class="form__casilla">
+            <span>Área de interés</span>
+            <select name="areas1">
+              <option value="Administracion">Administración</option>
+              <option value="Montaje">Montaje</option>
+              <option value="Ayudante">Ayudante</option>
+              <option value="Medio Oficial">Medio Oficial</option>
+              <option value="Oficial">Oficial</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__areaTexto">
+          <div>
+            <p>Información que quieras agregar</p>
+          </div>
+          <div>
+            <textarea name="Prueba" id="" cols="50" rows="15"> </textarea>
+          </div>
+        </div>
+        <div class="form__botones">
+          <div class="form__botonVerde">
+            <input type="button" class="btn btn-success" value="Enviar formulario">
+          </div>
+          <div class="form_botonRojo">
+            <input type="reset" class="btn btn-danger" value="Borrar formulario">
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer__container">
+      <h2>Contactanos</h2>
+      <div class="footer__subContainer">
+        <div class="footer__mail">
+          <h3>Mail</h3>
+          <a href="mailto:Tarcosa@gmail.com">Tarcosa@gmail.com</a>
+        </div>
+        <div class="footer__telefono">
+          <h3>Teléfono</h3>
+          <p>+54(341) 430-0619</p>
+        </div>
+        <div class="footer_visitanos">
+          <h3>Visitanos</h3>
+          <p>Av. Génova 2373</p>
+          <p>2000 - Rosario</p>
+          <p>Santa Fé - Argentina</p>
+        </div>
+      </div>
+      <div class="footer__seguinos">
+        <h3>Seguinos</h3>
+        <div>
+          <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
+          <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/bootstrap.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

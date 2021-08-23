@@ -1,0 +1,52 @@
+// pagina equipamiento
+
+.equipamiento__container {
+  background-color: #ddecf1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  margin: 0px auto 0px auto;
+  .equipamiento__bloque {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px 40px 20px 40px;
+    max-width: 425px;
+    .equipamiento__h3 {
+      h3 {
+        text-align: center;
+        text-decoration: underline black 3px;
+        text-transform: uppercase;
+      }
+    }
+    .equipamiento__foto {
+      img {
+        width: 330px;
+        height: 250px;
+        margin: 20px 0 20px 0;
+        border-radius: 20%;
+        transition: 1.5s;
+      }
+      @media only screen and (min-width: 600px){
+        img:hover {
+          width: 375px;
+          height: 280px;
+        }
+      }
+    }
+    .equipamiento__caracteristicas {
+      display: flex;
+      justify-content: center;
+      .equipamiento__lista {
+        font-size: 17px;
+        font-weight: bold;
+        color: rgba(5, 5, 5, 0.65);
+      }
+    }
+  }
+}
+
+
+
