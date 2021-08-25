@@ -26,8 +26,10 @@
         <h1>Tarco Electric S.A.</h1>
       </div>
       <div class="header__hipervinculos">
-        <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
-        <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+        <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter"
+            width="50"></a>
+        <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook"
+            width="45"></a>
       </div>
     </div>
     </div>
@@ -70,66 +72,97 @@
   </section>
 
   <section>
-    <form action="Contacto" method="POST" enctype="application/x-www-form-urlencoded">
-      <div class="form__container">
-        <div class="form__bloque">
-          <div class="form__casilla">
-            <p>Nombre:</p>
-            <input name="name">
-          </div>
-          <div class="form__casilla">
-            <p>Apellido:</p>
-            <input name="apellido">
-          </div>
-        </div>
-        <div class="form__bloque">
-          <div class="form__casilla">
-            <p>Edad:</p>
-            <input name="edad">
-          </div>
-          <div class="form__casilla">
-            <p>Localidad:</p>
-            <input name="localidad">
-          </div>
-        </div>
-        <div class="form__bloque">
-          <div class="form__casilla">
-            <span>Sexo:</span>
-            <span>Hombre</span>
-            <input type="radio" name="sexo" value="hombre">
-            <span>Mujer</span>
-            <input type="radio" name="sexo" value="mujer">
-          </div>
-          <div class="form__casilla">
-            <span>Área de interés</span>
-            <select name="areas1">
-              <option value="Administracion">Administración</option>
-              <option value="Montaje">Montaje</option>
-              <option value="Ayudante">Ayudante</option>
-              <option value="Medio Oficial">Medio Oficial</option>
-              <option value="Oficial">Oficial</option>
-            </select>
-          </div>
-        </div>
-        <div class="form__areaTexto">
-          <div>
-            <p>Información que quieras agregar</p>
-          </div>
-          <div>
-            <textarea name="Prueba" id="" cols="50" rows="15"> </textarea>
-          </div>
-        </div>
-        <div class="form__botones">
-          <div class="form__botonVerde">
-            <input type="button" class="btn btn-success" value="Enviar formulario">
-          </div>
-          <div class="form_botonRojo">
-            <input type="reset" class="btn btn-danger" value="Borrar formulario">
-          </div>
-        </div>
+    <div class="form2_container">
+      <div class="form2_personal">
+        <h2 class="form2_tituloTexto">Tarco electric S.A. busca el mejor personal dispuesto a dar lo mejor</h2>
+        <ul class="form2_list">
+          <li>Ambiente laboral amigable, trabajo en grupo y compañerismo. Las relaciones sociales dentro y fuera de la
+            empresa son muy importantes para nosotros.</li>
+          <li>Oportunidades de ascenso asegurada. Valoramos el esfuerzo individual y lo premiamos acorde a las
+            exigencias.</li>
+          <li>Seguridad laboral: nos manejamos con los protocolos más estrictos. Registro de "0" accidentes en los
+            últimos 3 años.</li>
+          <li>Flexibilidad laboral. Graficicacion y motivación inmediata.</li>
+        </ul>
       </div>
-    </form>
+      <div class="form2_formulario">
+        <div class="form2_tituloContainer">
+          <h2 class="form2_tituloFormulario">Formulario de contacto</h2>
+        </div>
+        <form>
+          <div class="row form2_mediaQuery">
+            <div class="col">
+              <span>Nombre</span>
+              <input type="text" class="form-control form2_inputColor" placeholder="">
+            </div>
+            <div class="col">
+              <span>Apellido</span>
+              <input type="text" class="form-control form2_inputColor" placeholder="">
+            </div>
+          </div>
+          <div class="row form2_mediaQuery">
+            <div class="col">
+              <span>Edad</span>
+              <input type="text" class="form-control form2_inputColor" placeholder="">
+            </div>
+            <div class="col">
+              <span>Localidad</span>
+              <input type="text" class="form-control form2_inputColor" placeholder="">
+            </div>
+          </div>
+          <div class="row form2_mediaQuery">
+            <div class="col">
+              <span>Email</span>
+              <input type="text" class="form-control form2_inputColor" placeholder="">
+            </div>
+            <div class="col">
+              <span>Área de trabajo</span>
+              <br>
+              <select class="form2_select form2_inputColor" name="areas1">
+                <option value="Administracion">Administración</option>
+                <option value="Montaje">Montaje</option>
+                <option value="Ayudante">Ayudante</option>
+                <option value="Medio Oficial">Medio Oficial</option>
+                <option value="Oficial">Oficial</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <div class="form__areaTexto">
+              <div>
+                <span>Información que quieras agregar:</span>
+              </div>
+              <div>
+                <textarea class="form2_textAreaProperties" name="Prueba" id="" cols="50" rows="15"> </textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row form2_checkButton">
+            <div class="col form2_politicasContainer">
+              <div class="form-check">
+                <input class="form-check-input form2_inputColor" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  <p class="form2_politicas"> Acepto las políticas de seguridad</p>
+                </label>
+              </div>
+            </div>
+            <div class="col form2_button">
+              <div class="form__botones">
+                <div class="form__botonVerde">
+                  <input type="button" class="btn btn-success" value="Enviar formulario">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="form2_contactoTelefono">Contacto por teléfono</h2>
+            <p class="form2_telefono">+54(341) 430-0619</p>
+          </div>
+      </div>
+      </form>
+    </div>
   </section>
+
 
   <footer>
     <div class="footer__container">
@@ -153,8 +186,10 @@
       <div class="footer__seguinos">
         <h3>Seguinos</h3>
         <div>
-          <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
-          <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+          <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter"
+              width="50"></a>
+          <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook"
+              width="45"></a>
         </div>
       </div>
     </div>
