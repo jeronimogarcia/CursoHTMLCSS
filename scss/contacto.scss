@@ -6,19 +6,22 @@
   background-color: #ddecf1;
   display: flex;
   flex-direction: column;
+  // container del titulo
   .contacto__h2 {
     display: flex;
     justify-content: center;
+    // titulo
     h2 {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: 24px;
+      font-size: 38px;
       padding: 30px 40px 0px 40px;
       border-bottom: black solid 2px;
       max-width: 80%;
     }
   }
+  // container informacion
   .contacto__informacion {
     display: flex;
     flex-direction: row;
@@ -26,15 +29,22 @@
     justify-content: space-around;
     padding-bottom: 20px;
     padding-top: 20px;
+    // container individual
     .contacto__bloques {
       text-align: center;
       min-width: 250px;
+      // div svg
       .contacto__svg {
         height: 60px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        // svg
         img {
           width: 50px;
         }
       }
+      // div texto
       .contacto__texto {
         h3 {
           padding-bottom: 10px;
@@ -49,14 +59,14 @@
     }
   }
 }
-
+// titulo de empresas
 .titulo__h3 {
   background-color: #ddecf1;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 0;
   letter-spacing: 1px;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 // clientes
@@ -85,7 +95,7 @@
   }
 }
 
-// Media query del navBar
+// Media querys
 
 @media only screen and (max-width: 856px) {
   .cliente__container {
@@ -104,4 +114,35 @@
       }
     }
   }
+  .contacto__container{
+    .contacto__h2{
+      h2{
+        font-size: 31px;
+      }
+    }
+  }
 }
+
+// tamaño de letras 
+@media only screen and (max-width: 670px){
+  .contacto__container{
+    .contacto__h2{
+      h2{
+        font-size: 23px;
+      }
+    }
+  }
+  .contacto__container .contacto__informacion .contacto__bloques .contacto__texto h3{
+    font-size: 20px;
+  }
+  .contacto__container .contacto__informacion .contacto__bloques .contacto__texto p{
+    font-size: 14px;
+  }
+  .titulo__h3{
+    font-size: 24px;
+  }
+}
+
+
+
+

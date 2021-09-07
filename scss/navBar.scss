@@ -1,9 +1,9 @@
-$colorFondoClaro: #c8efed;
+$colorFondoClaro: #f4fde6;
 
 // NavBar
 
 .nav__container {
-  background-color: #c8efed;
+  background-color: #f4fde6;
   position: sticky;
   top: 0;
   padding: 3px 0px 3px 0px;
@@ -29,7 +29,7 @@ $colorFondoClaro: #c8efed;
     display: inline-block;
     position: relative;
     padding-right: 30px;
-    border-right: solid 1px #f8efed;
+    border-right: solid 1px #182cff;
   }
   a {
     text-decoration: none;
@@ -37,6 +37,7 @@ $colorFondoClaro: #c8efed;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    color: black;
   }
 }
 
@@ -74,7 +75,7 @@ $colorFondoClaro: #c8efed;
 }
 .dropdownImage {
   width: 33px;
-  border: 2px solid blue;
+  border: 2px solid #82BAE0;
   border-radius: 20px;
   background-color: $colorFondoClaro;
 }
@@ -104,8 +105,18 @@ $colorFondoClaro: #c8efed;
 @media only screen and (max-width: 825px) {
   .dropdownContainer {
     display: flex;
+    position: sticky;
+
   }
   .nav__container {
     display: none;
   }
+
+  .dropdownContainer{
+    position: sticky;
+    top: 0
+  }
+  
 }
+
+
