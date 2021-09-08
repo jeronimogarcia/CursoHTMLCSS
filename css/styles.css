@@ -4,7 +4,7 @@
   grid-template-columns: 25% 50% 25%;
   width: 100%;
   height: 120px;
-  background-image: linear-gradient(#508ff5df, #c7f3ff, #508ff5df); }
+  background-image: linear-gradient(#50edf5, #c7f3ff, #50edf5); }
   .header__grilla .header__logo {
     grid-area: headerLogo;
     position: relative; }
@@ -109,6 +109,43 @@
     justify-content: space-around;
     padding: 0px 20px 0px 20px; }
 
+.nav2__container {
+  background-color: #fff4e5;
+  padding: 3px 0px 3px 14px; }
+  .nav2__container .nav2__divContainer .nav2__divElements a {
+    margin-right: 8px;
+    margin-left: 8px; }
+  .nav2__container .nav2__divContainer .nav2__divElements .element1 {
+    width: 68px; }
+  .nav2__container .nav2__divContainer .nav2__divElements .element2 {
+    width: 100px; }
+  .nav2__container .nav2__divContainer .nav2__divElements .element3 {
+    width: 147px; }
+  .nav2__container .nav2__divContainer .nav2__divElements .element4 {
+    width: 115px; }
+  .nav2__container .nav2__divContainer .nav2__divElements .element5 {
+    width: 216px; }
+
+.navbar-dark .navbar-toggler {
+  border-color: black;
+  background-color: black; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black; }
+
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: black;
+  font-weight: bold; }
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: black; }
+
+@media only screen and (max-width: 992px) {
+  .nav2__container .nav2__divContainer .nav2__divElements a {
+    margin-left: 0px; } }
+
 .inicio__containerGeneral {
   display: flex;
   flex-direction: column;
@@ -121,7 +158,7 @@
     flex-wrap: wrap;
     padding: 0px 130px 20px 130px; }
     .inicio__containerGeneral .inicio__subContainer:first-child {
-      margin-top: 30px; }
+      margin-top: 25px; }
     .inicio__containerGeneral .inicio__subContainer .inicio__containerTexto {
       display: flex;
       flex-direction: column;
@@ -198,7 +235,7 @@
     width: 290px; } }
 
 .contacto__container {
-  padding-top: 20px;
+  padding-top: 5px;
   background-color: #ddecf1;
   display: flex;
   flex-direction: column; }
@@ -352,7 +389,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 45px 0px 45px 0px;
+  padding: 35px 0px 45px 0px;
   background-color: #ddecf1;
   flex-wrap: wrap; }
   .form2_container .form2_personal {
