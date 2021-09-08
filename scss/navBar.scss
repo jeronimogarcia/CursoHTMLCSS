@@ -1,16 +1,19 @@
 // navbar
 
+// contenedor general
 .nav2__container {
   background-color: #fff4e5;
   padding: 3px 0px 3px 14px;
   .nav2__button {
   }
   .nav2__divContainer {
+    // links de paginas
     .nav2__divElements {
       a {
         margin-right: 8px;
         margin-left: 8px;
       }
+      // ancho de contenedor de elementos para que no se muevan cuando se ponen en negrita
       .element1 {
         width: 68px;
       }
@@ -53,6 +56,8 @@
 .navbar-dark .navbar-nav .nav-link:focus {
   color: black;
 }
+
+// media query
 
 @media only screen and (max-width: 992px) {
   .nav2__container {
