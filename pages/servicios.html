@@ -26,115 +26,103 @@
         <h1>Tarco Electric S.A.</h1>
       </div>
       <div class="header__hipervinculos">
-        <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
-        <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+        <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter"
+            width="45" height="45"></a>
+        <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook"
+            width="45"></a>
       </div>
     </div>
     </div>
   </section>
 
-  <nav class="nav__container">
-    <ul class="nav__lista">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="./servicios.html">Servicios</a>
-        <ul class="nav_sublista">
-          <li><a href="">Armado de andamios</a></li>
-          <li><a href="">Fabricación propia</a></li>
-        </ul>
-      </li>
-      <li><a href="./equipamiento.html">Equipamiento</a> </li>
-      <li><a href="./contacto.html">Contacto</a> </li>
-      <li><a href="./trabajo.html">Trabaja con nosotros</a> </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top nav2__container">
+    <button class="navbar-toggler nav2__button" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav2__divContainer" id="navbarNavAltMarkup">
+      <div class="navbar-nav nav2__divElements">
+        <a class="nav-item nav-link mb-0 h5 element1" href="../index.html">Inicio <span class="sr-only"></span></a>
+        <a class="nav-item nav-link active mb-0 h5 element2" href="./servicios.html">Servicios</a>
+        <a class="nav-item nav-link mb-0 h5 element3" href="./equipamiento.html">Equipamiento</a>
+        <a class="nav-item nav-link mb-0 h5 element4" href="./contacto.html">Contacto</a>
+        <a class="nav-item nav-link mb-0 h5 element5" href="./trabajo.html">Trabaja con Nosotros</a>
+      </div>
+    </div>
   </nav>
-
-  <section class="dropdownContainer">
-    <div class="dropdown dropdownColor">
-      <button class="btn btn-secondary dropdown-toggle buttonSize" type="button" id="dropdownMenuButton"
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img src="../imagenes/menuBlack.svg" alt="Menu Hamburguesa" class="dropdownImage">
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="../index.html">Inicio</a>
-        <a class="dropdown-item" href="./servicios.html">Servicios</a>
-        <a class="dropdown-item" href="./equipamiento.html">Equipamiento</a>
-        <ul>
-          <li><a href="">Armado de andamios</a></li>
-          <li><a href="">Fabricación propia</a></li>
-        </ul>
-        <a class="dropdown-item" href="./contacto.html">Contacto</a>
-        <a class="dropdown-item" href="./trabajo.Html">Trabaja con nosotros</a>
-      </div>
-    </div>
-    <h2 class="dropdown__menu">Menú</h2>
-  </section>
 
   <section>
     <div class="servicios__container">
-      <div class="servicios__subContainer">
+      <div class="servicios__bloque">
         <div class="servicios__titulo">
           <h2>Armado de andamios</h2>
         </div>
+        <div class="servicios__texto">
+          Armado de andamios en todo sector a nivel industrial. Personal habilitado para cálculos de ingenieráa en
+          andamios mayores a 6 metros y correcta habilitación de los mismos. Nos encargamos del transporte y armado de
+          ser necesario.
+        </div>
         <div class="servicios__video">
-          <iframe width="450" height="315" src="https://www.youtube.com/embed/bxn1TV1eIaY" title="YouTube video player"
+          <iframe src="https://www.youtube.com/embed/bxn1TV1eIaY" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
       </div>
-      <div class="servicios__subContainer">
+      <div class="servicios__bloque">
         <div class="servicios__titulo">
           <h2>Fabricación propia</h2>
         </div>
         <div class="servicios__texto">
-          En el marco de un contrato de mantenimiento de iluminación por objetivos, teníamos un costo muy elevado en
-          materiales y mano de obra por el continuo reemplazo de proyectores de primera marca, instalados en sectores
-          con alta presencia de cloro y humedad. Ante la inexistencia de soluciones estándares, decidimos diseñar para
-          nuestro cliente un Proyector HQI 400w construido integramente en acero inoxidable 316. Gracias a la confianza
-          de nuestro cliente, en tan solo 1 año esos equipos lograron un retorno de la inversión en positivo,
+          Fabricación de Proyector HQI 400W construido integramente de acero inoxidable 316. Retorno de inversión en 1
+          año.
+          Instalación en sectores de alta presencia de cloro y humedad. Ultra resistente y duradero.
         </div>
         <div class="servicios__tabla">
-          <table border=3px cellpading=15px cellspacing=30px class="table">
-            <tr class="thTabla">
-              <th>Nombre del producto</th>
-              <th>Información Técnica</th>
-              <th>Características</th>
-              <th>Beneficios</th>
-              <th>Recomendaciones</th>
-            </tr>
-            <tr>
-              <td class="bold">
-                Proyector 400W 316
-              </td>
-              <td>
-                <ol>
-                  <li>Habilitado para 400w y 250w</li>
-                  <li>100% acero inoxidable 316</li>
-                  <li>IP 66</li>
-                  <li>Burlete de goma</li>
-                  <li>Bulonería métrica 4</li>
-                </ol>
-              </td>
-              <td>
-                <ol>
-                  <li>Incluye soporte</li>
-                  <li>Hermeticidad asegurada</li>
-                </ol>
-              </td>
-              <td>
-                <ol>
-                  <li>Ahorra hasta 60% por año</li>
-                  <li>Reemplazo de equipo cada 2 años</li>
-                  <li>Diseño super liviano</li>
-                </ol>
-              </td>
-              <td>
-                <ol>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Información Técnica</th>
+                <th scope="col">Características</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                  <ul>
+                    <li>Habilitado para 400w y 250w</li>
+                    <li>100% acero inoxidable 316</li>
+                    <li>Burlete de goma</li>
+                    <li>Bulonería métrica 4</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Incluye soporte</li>
+                    <li>Hermeticidad asegurada</li>
+                    <li>IP 66</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Beneficios</th>
+                <th>Recomendaciones</th>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <ul>
+                    <li>Ahorra hasta 60% por año</li>
+                    <li>Reemplazo de equipo cada 2 años</li>
+                    <li>Diseño super liviano</li>
+                  </ul>
+                </td>
+
+                <td>
                   <li>No se recomiendan en lugares con temperaturas mayores a 70 grados</li>
                   <li>Bulones de fijación a pared recomendado 5/16 o mayor </li>
-                </ol>
-              </td>
-            </tr>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
@@ -163,8 +151,10 @@
       <div class="footer__seguinos">
         <h3>Seguinos</h3>
         <div>
-          <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter" width="50"></a>
-          <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook" width="45"></a>
+          <a href="https://twitter.com/tarcoargentina?lang=es"><img src="../imagenes/twitter.svg" alt="Logo de Twitter"
+              width="45" height="45"></a>
+          <a href="https://www.facebook.com/tarco.sa"><img src="../imagenes/facebook.svg" alt="Logo de Facebook"
+              width="45"></a>
         </div>
       </div>
     </div>

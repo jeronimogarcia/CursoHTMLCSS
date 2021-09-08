@@ -109,96 +109,6 @@
     justify-content: space-around;
     padding: 0px 20px 0px 20px; }
 
-.nav__container {
-  background-color: #f4fde6;
-  position: sticky;
-  top: 0;
-  padding: 3px 0px 3px 0px;
-  z-index: 1; }
-  .nav__container .nav__lista {
-    list-style: none;
-    margin-block-start: 0em;
-    margin-block-end: 0em; }
-    .nav__container .nav__lista .nav_sublista {
-      position: absolute;
-      display: none; }
-      .nav__container .nav__lista .nav_sublista li {
-        display: block; }
-    .nav__container .nav__lista li:hover ul {
-      display: block;
-      padding: 0;
-      background-color: #f4fde6; }
-  .nav__container li {
-    display: inline-block;
-    position: relative;
-    padding-right: 30px;
-    border-right: solid 1px #182cff; }
-  .nav__container a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: black; }
-
-/* Dropdown menu */
-.dropdownContainer {
-  display: none;
-  background-color: #f4fde6; }
-  .dropdownContainer div {
-    background-color: #f4fde6; }
-    .dropdownContainer div a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      border-bottom: black solid 1px; }
-
-.dropdown-toggle::after {
-  display: none; }
-
-.buttonSize {
-  padding: 0; }
-
-.btn-secondary {
-  background-color: #f4fde6;
-  border-color: #f4fde6; }
-
-.dropdownColor {
-  background-color: #f4fde6; }
-
-.dropdownImage {
-  width: 33px;
-  border: 2px solid #82BAE0;
-  border-radius: 20px;
-  background-color: #f4fde6; }
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: #f4fde6;
-  border-color: #f4fde6;
-  box-shadow: none; }
-
-.btn-secondary.dropdown-toggle {
-  background-color: #f4fde6 !important;
-  border-color: #f4fde6 !important;
-  box-shadow: none !important; }
-
-.dropdown__menu {
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  padding-left: 5px;
-  font-size: 29px; }
-
-@media only screen and (max-width: 825px) {
-  .dropdownContainer {
-    display: flex;
-    position: sticky; }
-  .nav__container {
-    display: none; }
-  .dropdownContainer {
-    position: sticky;
-    top: 0; } }
-
 .inicio__containerGeneral {
   display: flex;
   flex-direction: column;
@@ -567,15 +477,61 @@
       justify-content: center; } }
 
 .servicios__container {
-  background-color: #ddecf1; }
-  .servicios__container .servicios__subContainer {
+  background-color: #ddecf1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 35px 130px 0px 130px; }
+  .servicios__container .servicios__bloque {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0 20px 0; }
-    .servicios__container .servicios__subContainer .servicios__titulo {
+    padding: 0px 10px 20px 10px;
+    width: 520px; }
+    .servicios__container .servicios__bloque .servicios__titulo h2 {
+      font-size: 28px;
+      text-decoration: underline black 3px;
+      text-transform: uppercase;
+      text-align: center; }
+    .servicios__container .servicios__bloque .servicios__texto {
       padding-bottom: 20px;
-      text-transform: uppercase; }
-    .servicios__container .servicios__subContainer .servicios__texto {
-      max-width: 500px;
-      padding-bottom: 20px; }
+      font-size: 19px;
+      font-weight: bold; }
+
+iframe {
+  width: 450px;
+  height: 315px; }
+
+.table {
+  border-color: black; }
+
+@media only screen and (max-width: 900px) {
+  .servicios__container {
+    padding: 35px 0px 0px 0px; } }
+
+@media only screen and (max-width: 560px) {
+  .servicios__container {
+    padding: 35px 0px 0px 0px; }
+    .servicios__container .servicios__bloque {
+      padding: 0px 20px 20px 15px; }
+      .servicios__container .servicios__bloque .servicios__titulo h2 {
+        font-size: 26px; }
+      .servicios__container .servicios__bloque .servicios__texto {
+        font-size: 17px; }
+  iframe {
+    width: 340px;
+    height: 240px; } }
+
+@media only screen and (max-width: 380px) {
+  .servicios__container {
+    padding: 35px 0px 0px 0px; }
+    .servicios__container .servicios__bloque {
+      padding: 0px 20px 20px 15px; }
+      .servicios__container .servicios__bloque .servicios__titulo h2 {
+        font-size: 24px; }
+      .servicios__container .servicios__bloque .servicios__texto {
+        font-size: 15px; }
+  iframe {
+    width: 290px;
+    height: 204px; } }
