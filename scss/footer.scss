@@ -12,7 +12,6 @@ $borderColor: white;
   padding: 15px 0px 15px 0px;
   // modificacion "contactanos"
   h2 {
-    border-bottom: $borderColor 2px solid;
     letter-spacing: 4px;
     text-transform: uppercase;
   }
@@ -33,7 +32,6 @@ $borderColor: white;
       // titulos
       h3 {
         margin: auto;
-        border-bottom: $borderColor solid 2px;
       }
       // mail
       a {
@@ -52,7 +50,6 @@ $borderColor: white;
   .footer__seguinos {
     h3 {
       text-transform: uppercase;
-      border-bottom: $borderColor 2px solid;
       padding: 0px 15px 0px 15px;
     }
     // posicion logos

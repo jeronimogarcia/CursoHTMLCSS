@@ -15,9 +15,9 @@
       left: 0; }
       .header__grilla .header__logo .header__logoContainer .header__raysvgPosition {
         position: absolute;
-        top: 8px;
-        width: 75px;
-        left: 187px;
+        top: 19px;
+        width: 64px;
+        left: 178px;
         z-index: 1; }
       .header__grilla .header__logo .header__logoContainer .header__raysvgEffect {
         animation-name: efectoRayo;
@@ -26,7 +26,8 @@
         animation-delay: 0s; }
       .header__grilla .header__logo .header__logoContainer .header__logosvgPosition {
         position: absolute;
-        width: 250px; }
+        width: 250px;
+        padding: 10px; }
   .header__grilla .header__titulo {
     grid-area: headerTitulo; }
     .header__grilla .header__titulo h1 {
@@ -72,7 +73,6 @@
   color: white;
   padding: 15px 0px 15px 0px; }
   .footer__container h2 {
-    border-bottom: white 2px solid;
     letter-spacing: 4px;
     text-transform: uppercase; }
   .footer__container .footer__subContainer {
@@ -89,8 +89,7 @@
       margin-top: 15px;
       margin-bottom: 15px; }
       .footer__container .footer__subContainer div h3 {
-        margin: auto;
-        border-bottom: white solid 2px; }
+        margin: auto; }
       .footer__container .footer__subContainer div a {
         text-decoration: none;
         display: flex;
@@ -102,7 +101,6 @@
         padding-left: 34px; }
   .footer__container .footer__seguinos h3 {
     text-transform: uppercase;
-    border-bottom: white 2px solid;
     padding: 0px 15px 0px 15px; }
   .footer__container .footer__seguinos div {
     display: flex;
@@ -111,7 +109,9 @@
 
 .nav2__container {
   background-color: #fff4e5;
-  padding: 3px 0px 3px 14px; }
+  padding: 3px 0px 3px 15px; }
+  .nav2__container .nav2__divContainer .navbar-nav {
+    align-items: center; }
   .nav2__container .nav2__divContainer .nav2__divElements a {
     margin-right: 8px;
     margin-left: 8px; }
@@ -145,6 +145,10 @@
 @media only screen and (max-width: 992px) {
   .nav2__container .nav2__divContainer .nav2__divElements a {
     margin-left: 0px; } }
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center; } }
 
 .inicio__containerGeneral {
   display: flex;

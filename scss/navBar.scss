@@ -3,8 +3,12 @@
 // contenedor general
 .nav2__container {
   background-color: #fff4e5;
-  padding: 3px 0px 3px 14px;
+  padding: 3px 0px 3px 15px;
   .nav2__divContainer {
+    // centrado de items
+    .navbar-nav{
+      align-items: center;
+    }
     // links de paginas
     .nav2__divElements {
       a {
@@ -66,5 +70,11 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
   }
 }
